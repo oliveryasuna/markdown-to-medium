@@ -1,0 +1,167 @@
+{
+
+  //==================================================
+  // TypeScript
+  //==================================================
+
+  // Imports
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+
+  // Spaces
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": false,
+  "typescript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+  "typescript.format.insertSpaceAfterCommaDelimiter": true,
+  "typescript.format.insertSpaceAfterConstructor": false,
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": false,
+  "typescript.format.insertSpaceAfterSemicolonInForStatements": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": false,
+  "typescript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+
+  // Newlines
+  "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+
+  // Whitespace
+  "typescript.format.indentSwitchCase": true,
+
+  // Suggestions
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  // SDK
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  // Miscellaneous
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.format.semicolons": "insert",
+
+  //==================================================
+  // Java
+  //==================================================
+
+  "java.configuration.updateBuildConfiguration": "automatic",
+
+  //==================================================
+  // CSS
+  //==================================================
+
+  "cssVariables.lookupFiles": [
+    "**/*.css"
+  ],
+
+  //==================================================
+  // Language-specific
+  //==================================================
+
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true
+  },
+
+  //==================================================
+  // NPM
+  //==================================================
+
+  "npm.packageManager": "bun",
+
+  //==================================================
+  // ESLint
+  //==================================================
+
+  "eslint.enable": true,
+  "eslint.useFlatConfig": true,
+  "eslint.workingDirectories": [ { "mode": "auto" } ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  //==================================================
+  // Editor
+  //==================================================
+
+  // Formatting/fixing
+  "editor.codeActionsOnSave": {
+    "source.formatting": "explicit",
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  // Rendering
+  "editor.rulers": [
+    80,
+    180
+  ],
+
+  // Tabs
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  //==================================================
+  // Files
+  //==================================================
+
+  // Whitespace
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // Miscellaneous
+  "files.associations": {
+    "tsconfig.json": "jsonc",
+    "tsconfig.*.json": "jsonc",
+    "*.sql": "sql"
+  },
+
+  //==================================================
+  // Search
+  //==================================================
+
+  "search.exclude": {
+    "**/node_modules": true,
+    ".git": true,
+    ".husky/_": true,
+    "dist": true,
+    "tmp": true,
+    ".eslintcache": true,
+    "bun.lockb": true
+  },
+
+  //==================================================
+  // Miscellaneous
+  //==================================================
+
+  // CodeMetrics extension
+  "codemetrics.basics.ComplexityLevelExtreme": 25,
+  "codemetrics.basics.ComplexityLevelHigh": 15,
+  "codemetrics.basics.ComplexityLevelNormal": 10,
+  "codemetrics.basics.ComplexityLevelLow": 5,
+  "codemetrics.basics.CodeLensHiddenUnder": 5,
+
+  // Telemetry
+  "telemetry.feedback.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "rest-client.enableTelemetry": false,
+  "java.compile.nullAnalysis.mode": "automatic"
+}
