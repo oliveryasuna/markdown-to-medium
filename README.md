@@ -20,7 +20,8 @@ The HTML is copied to your clipboard. Paste into Medium with `Cmd+V` / `Ctrl+V`.
 ## Platform Requirements
 
 - **macOS** -- Swift (included with Xcode/CLT)
-- **Linux** -- `xclip` (`sudo apt install xclip`)
+- **Linux (X11)** -- `xclip` (`sudo apt install xclip`)
+- **Linux (Wayland)** -- `wl-clipboard` (`sudo apt install wl-clipboard`)
 - **Windows** -- PowerShell (included with Windows)
 
 ## Security

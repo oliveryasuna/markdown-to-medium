@@ -9,6 +9,7 @@
     "m2m": "index.ts"
   },
   "scripts": {
+    "build": "bun build ./index.ts --compile --outfile dist/m2m"
   },
   "dependencies": {
     "marked": "18.0.3"
