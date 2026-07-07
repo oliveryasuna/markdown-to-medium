@@ -26,6 +26,9 @@ cat article.md | m2m | xclip -selection clipboard -t text/html
 
 # Linux (Wayland)
 cat article.md | m2m | wl-copy --type text/html
+
+# Windows
+Get-Content article.md -Raw | m2m | Set-Clipboard
 ```
 
 Or write it straight to a file:
