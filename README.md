@@ -1,6 +1,6 @@
 # markdown-to-medium
 
-Converts Markdown to HTML and copies it to your clipboard as rich text. Paste directly into Medium (or any rich text editor) with formatting preserved.
+Converts Markdown to HTML and prints it to stdout. Pipe it wherever you want — a file, your clipboard, or another tool.
 
 ## Installation
 
@@ -15,18 +15,28 @@ bun link
 cat article.md | m2m
 ```
 
-The HTML is copied to your clipboard. Paste into Medium with `Cmd+V` / `Ctrl+V`.
+The HTML is written to stdout. Pipe it to your clipboard to paste into Medium (or any rich text editor):
 
-## Platform Requirements
+```sh
+# macOS
+cat article.md | m2m | pbcopy
 
-- **macOS** -- Swift (included with Xcode/CLT)
-- **Linux (X11)** -- `xclip` (`sudo apt install xclip`)
-- **Linux (Wayland)** -- `wl-clipboard` (`sudo apt install wl-clipboard`)
-- **Windows** -- PowerShell (included with Windows)
+# Linux (X11)
+cat article.md | m2m | xclip -selection clipboard -t text/html
+
+# Linux (Wayland)
+cat article.md | m2m | wl-copy --type text/html
+```
+
+Or write it straight to a file:
+
+```sh
+cat article.md | m2m --write article.html
+```
 
 ## Security
 
-HTML output is not sanitized. Malicious Markdown (e.g., `<script>` tags) will be included in the clipboard contents. Most rich text editors (including Medium) sanitize on paste, but be cautious when pasting into contexts that render raw HTML.
+HTML output is not sanitized. Malicious Markdown (e.g., `<script>` tags) will be included in the output. Most rich text editors (including Medium) sanitize on paste, but be cautious when piping into contexts that render raw HTML.
 
 ## License
 
